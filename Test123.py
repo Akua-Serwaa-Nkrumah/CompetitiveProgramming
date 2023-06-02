@@ -5,4 +5,4 @@ for i in range(n):
     list_phrases.append(element)
 
 for j in list_phrases:
-    print (j) 
+    print (j)
