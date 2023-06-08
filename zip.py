@@ -1,5 +1,12 @@
-A = [1,2,3]
-B = [6,5,4]
-C = [7,8,9]
-X = [A] + [B] + [C]
-print(X)
+
+N,X = map(int,input().split())
+
+subject = []
+for i in range(X):
+    marks = list((map(float,input().split())))
+    subject.append(marks)
+   
+subject = list(zip(*subject))
+for mark in subject:
+    print(sum(mark)/len(mark))
+
