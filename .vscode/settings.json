@@ -76,5 +76,6 @@
         ]
     },
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "cph.general.onceMaintainerMessage": false
 }

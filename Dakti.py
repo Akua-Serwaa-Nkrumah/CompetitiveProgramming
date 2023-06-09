@@ -1,16 +1,15 @@
 n = int(input())
-words = []
-for i in range(n):
-   s = input()
-   words.append(s)
-   
-for word in words:
-    if word.find("1"):
-        word.remove("1")
-        words[0] = word
-    elif word.find("2"):
-        word.remove("2")
-        words[1] = word
-    elif word.find("3"):
-        word.remove("3")
-        words[2] = word
+for _ in range(n):
+    words = input().split()
+    word_dict = {}
+    for word in words:
+        number = ""
+        for w in word:
+            if w.isdigit():
+                number += w
+            
+        # print("number:",number)
+        word_dict[int(number)] = word.replace(number, "")
+    sorted_words = [word_dict[i] for i in sorted(word_dict)]
+    # print(sorted_words)
+    print(" ".join(sorted_words))
