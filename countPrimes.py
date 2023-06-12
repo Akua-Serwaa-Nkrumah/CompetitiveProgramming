@@ -2,13 +2,13 @@ class Solution(object):
     def countPrimes(self, l):
         count = 0
         for n in range(l):
-            b = 2
+            # b = 2
             a = 0
-            while b <= n / 2:
+            for b in range(2,(n//2)+1):
                 if (n % b) == 0:
                     a = b
                     break
-                b+=1
+                # b+=1
             if a or n == 1 or n == 0:
                 pass  
             else:

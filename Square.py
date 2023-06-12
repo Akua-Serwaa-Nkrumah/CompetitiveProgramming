@@ -9,13 +9,13 @@ for _ in range(n):
         for j in range(len(second)):
             if first[i] == second[j]:
                 square.append(first[i])
-                break
+                
     square = sorted(square)
     if square != []:
-        if (first[0] + second[0]) == square[0] and first[0] != 0 and second[0] != 0:
-            print("YES")
+        if (first[0] + second[0]) == square[-1] and first[0] != 0 and second[0] != 0:
+            print("Yes")
         else:
-            print("NO")
+            print("No")
     else:
-        print('NO')
+        print("No")
         
