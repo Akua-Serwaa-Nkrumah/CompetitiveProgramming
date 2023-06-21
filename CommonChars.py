@@ -1,5 +1,8 @@
+from collections import Counter
+
 def CommonChars(words):
     common = []
+    
     words = sorted(words)
    
     print(words)
@@ -15,4 +18,4 @@ def CommonChars(words):
             common.append(letter)
             
     return common
-print(CommonChars(["cool","lock","cook"]))
+print(CommonChars(["cook","lock","cool"]))
