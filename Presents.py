@@ -5,4 +5,3 @@ for gift in gifts:
    present[gift-1] = gifts.index(gift)+1
     
 print(*present)
-
