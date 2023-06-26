@@ -9,9 +9,7 @@ for _ in range(t):
             print("NO")
         else: 
             for i in range(len(before)):
-                if before[i] == after[i]:
-                    continue
-                else:
+                if before[i] != after[i]:
                     print("NO")
                     break
             print("YES")   
@@ -23,9 +21,7 @@ for _ in range(t):
             print("NO")
         else: 
             for i in range(len(before)):
-                if before[i] == after[i]:
-                    continue
-                else:
+                if before[i] != after[i]:
                     print("NO")
                     break
             print("YES") 
