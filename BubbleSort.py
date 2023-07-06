@@ -14,19 +14,16 @@ import sys
 
 def countSwaps(a):
     # Write your code here
-    n = len(a)
     numSwaps = 0
-    for i in range(n):
-        for j in range(n - i - 1):
-            if a[j] > a[j + 1]:
-                a[j], a[j + 1] = a[j + 1], a[j]
+    for i in range(len(a)):
+        for j in range(i+1,len(a)):
+            if a[i]>a[j]:
+                a[i],a[j] = a[j],a[i]
                 numSwaps += 1
-
-    print("Array is sorted in", numSwaps, "swaps.")
-    print("First Element:", a[0])
-    print("Last Element:", a[-1])
-
-    
+    print("Array is sorted in",numSwaps,"swaps.")
+    print("First Element:",a[0])
+    print("Last Element:",a[-1])
+    return
 
 if __name__ == '__main__':
     n = int(input().strip())
