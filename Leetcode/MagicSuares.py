@@ -20,15 +20,9 @@ class Solution(object):
         def distinct(grid,row,col):
             distinct_grid = set()
             for a in range(3):
-                if 1 <= grid[row+a][col:col+3] <= 9:
-                    distinct_grid.add(grid[row+a][col:col+3])
                 for b in range(3):
                     if 1 <= grid[row+a][col+b] <= 9:
                         distinct_grid.add(grid[row+a][col+b])
-                if 1<= grid[row+a][col+a] <=9:
-                    distinct_grid.add(grid[row+a][col+a])
-                if 1 <= grid[row+a][col+2-a]<= 9:
-                    distinct_grid.add(grid[row+a][col+2-a])
 
             if len(distinct_grid) == 9:
                 return True
