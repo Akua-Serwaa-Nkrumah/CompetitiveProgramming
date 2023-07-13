@@ -7,7 +7,7 @@ def RemoveSmallest(arr):
                 min_index = arr.index(minimum)
                 if compare[min_index] == 0:
                     compare[min_index] = minimum
-              
+       
     if compare.count(0) == 1:
         return "YES"
     return "NO"
