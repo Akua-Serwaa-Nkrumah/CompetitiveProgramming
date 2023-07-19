@@ -1,5 +1,5 @@
 def Beautiful(a,b,c,d):
-    if (a <= b and c <= d and a <= c and b <=d) or (c <= a and d <= b and c <= d and a <= b) or (d <= c and b <= a and d <= b and c <= a) or (b <= d and a <= c and b <= a and d <= c):
+    if (a < b and c < d and a < c and b < d) or (c < a and d < b and c < d and a < b) or (d < c and b < a and d < b and c < a) or (b < d and a < c and b < a and d < c):
         return True
     
     return False
