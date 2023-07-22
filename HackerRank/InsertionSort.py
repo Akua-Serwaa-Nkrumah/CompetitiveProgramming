@@ -16,15 +16,21 @@ import sys
 
 def insertionSort1(n, arr):
     # Write your code here
-    if 1<=n<=1000:
-        temp = arr[-1]
-        for i in range(n-2,-1,-1):
-            arr[i+1] = max(temp,arr[i])
-            print(*arr)   
+        for i in range(1,n):
+            key = arr[i]
+            j = i-1
+            
+            while j>= 0 and key < arr[j]:
+                arr[j+1] = arr[j]
+                j -= 1
+                print(*arr)
+                
+            arr[j+1] = key 
+        print(*arr) 
 
 if __name__ == '__main__':
     n = int(input().strip())
 
     arr = list(map(int, input().rstrip().split()))
 
-    insertionSort1(n, arr)
+    insertionSort1(14,[1,3,5,9,13,22,27,35,46,51,55,83,87,23])
