@@ -1,12 +1,14 @@
 def sortArraySegment(n, arr):
-    start = -1
-    end = -1
+    start = 0
+    end = 0
 
-    for i in range(n - 1):
-        if arr[i] > arr[i + 1]:
-            if start == -1:
-                start = i
-            end = i + 1
+    if arr == sorted(arr):
+        return (start+1,end+1)
+    
+    for start in range(n-1):
+        if arr[start] > arr[start+1]:
+            end = start+1
+        if sorted 
     
     if start == -1:
         return "yes\n1 1"  # Array is already sorted
