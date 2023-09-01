@@ -21,8 +21,7 @@ t = int(input())
 
 for _ in range(t):
     n = int(input())
-    a = list(map(int, input().split()))
-    a = sorted(a)
+    a = sorted(list(map(int, input().split())))
     print(Triple(a,n))
     
     
