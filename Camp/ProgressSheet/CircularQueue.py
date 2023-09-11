@@ -33,9 +33,6 @@ class MyCircularQueue:
     def deQueue(self) -> bool:
         if self.size == 0:
             return False
-        elif self.size == 1:
-            self.front = None
-            self.last = None
         else:
             self.front = self.front.next
 
