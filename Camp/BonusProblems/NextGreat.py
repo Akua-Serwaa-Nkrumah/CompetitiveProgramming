@@ -1,4 +1,5 @@
-from collections import defaultdict
+from collections import defaultdict 
+
 class Solution:
     def nextGreaterElement(self, nums1: [int], nums2: [int]) -> [int]:
         stack = []
