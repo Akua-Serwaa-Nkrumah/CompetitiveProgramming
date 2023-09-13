@@ -1,5 +1,5 @@
 class Solution:
-    def minimumRemoval(self, beans: List[int]) -> int:
+    def minimumRemoval(self, beans: [int]) -> int:
         beans.sort()
         p_sum = [beans[0]]*len(beans)
 
