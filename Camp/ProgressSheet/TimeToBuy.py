@@ -1,3 +1,4 @@
+from collections import deque
 class Solution:
     def timeRequiredToBuy(self, tickets: [int], k: int) -> int:
         total = 0
