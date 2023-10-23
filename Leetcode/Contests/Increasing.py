@@ -1,6 +1,4 @@
 def increase(a):
-    if len(a) == 1:
-        return "YES"
     
     if len(set(a)) == n:
         return "YES"
