@@ -5,7 +5,6 @@ class Solution:
             return state.issubset(set(nums)) 
 
         def get_candidates(state):
-            res = set()
             if len(state) == 0:
                 return nums
 
