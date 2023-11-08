@@ -22,8 +22,13 @@ def BinDeq(a):
             total -= a[l]
             l += 1
             
+<<<<<<< HEAD
         elif total == s: 
             mx = max(mx,r-l+1)
+=======
+         
+        mx = max(mx,r-l+1)
+>>>>>>> 828c2e1eee0993641731395ed585ec347b246985
             
         r += 1
         
