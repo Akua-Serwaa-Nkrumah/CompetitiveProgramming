@@ -1,6 +1,7 @@
 from heapq import *
 from collections import Counter
 <<<<<<< HEAD
+<<<<<<< HEAD
 # class Solution:
 #     def topKFrequent(self, words: [str], k: int) -> [str]:
 #         heap = []
@@ -47,6 +48,8 @@ class Solution:
                     words.append(j)
                     
 =======
+=======
+>>>>>>> 04920eb23532d69c41be6dca5a1496ac538cceee
 class Solution:
     def topKFrequent(self, words: [str], k: int) -> [str]:
         heap = []
@@ -65,6 +68,9 @@ class Solution:
             for j in word_count:
                 if word_count[j] == -mx and j not in freq:
                     words.append(j)
+<<<<<<< HEAD
+>>>>>>> 04920eb23532d69c41be6dca5a1496ac538cceee
+=======
 >>>>>>> 04920eb23532d69c41be6dca5a1496ac538cceee
             freq.extend(sorted(words))
             i += 1
@@ -72,8 +78,11 @@ class Solution:
         return freq[:k]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 
+=======
+>>>>>>> 04920eb23532d69c41be6dca5a1496ac538cceee
 =======
 >>>>>>> 04920eb23532d69c41be6dca5a1496ac538cceee
         
