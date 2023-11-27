@@ -1,12 +1,18 @@
-from collections import OrderedDict
+from collections import Counter
+
 t = int(input())  
 for _ in range(t):
     n, c = map(int, input().split())  
-    planets = OrderedDict()
-    planets = list(map(int, input().split()))
+    a = list(map(int,input().split()))
+    planets = Counter(a)
     
-    print(len(planets))
-    print(planets[2])
-    print(planets)
+    total = 0
     
+    for orbit in planets:
+        if c <= planets[orbit]:
+            total += c   
+        else: 
+            total += planets[orbit]
+
+    print(total)
     
