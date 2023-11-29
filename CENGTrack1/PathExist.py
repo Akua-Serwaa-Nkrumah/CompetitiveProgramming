@@ -1,5 +1,6 @@
+from collections import defaultdict
 class Solution:
-    def validPath(self, n: int, edges: List[List[int]], source: int, destination: int) -> bool:
+    def validPath(self, n: int, edges: [[int]], source: int, destination: int) -> bool:
         if source == destination:
             return True
 
@@ -25,8 +26,8 @@ class Solution:
                 if node not in visited:
                     visited.add(node)
 
-                    a = search(node,destination,visited)
-                    if a: return True
+                    found = search(node,destination,visited)
+                    if found: return True
 
         return search(source,destination,visited)
 
