@@ -1,13 +1,15 @@
-def  max_area(height):
-    compare = []
-    compare[:] = list(set(sorted(height[:])))
-    
-    max_pos = height.index(compare[-1])
-    pre_max = height.index(compare[-2])
-    
-    width_water = abs(max_pos - pre_max)
+class Solution:
+    def maxArea(self, height: [int]) -> int:
+        l, r = 0, len(height)-1
+        mx = 0
 
-    return(width_water*compare[-2])
+        while l < r:
+            if height[l] < height[r]:
+                mx = max(mx,(r-l)*height[l])
+                l += 1
 
-height = [1,8,6,2,5,4,8,3,7]
-print(max_area(height))
+            else:
+                mx = max(mx,(r-l)*height[r])
+                r -= 1
+
+        return mx
